@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    * {
+      font-family: "Outfit", sans-serif;
+    }
+  </style>
+  <title>Payoo | Login</title>
+</head>
+
+<body class="min-h-screen max-w-md mx-auto bg-base-200">
+  <div class="logo w-52 mx-auto pt-32 pb-8">
+    <img src="./assets/Logo-full.png" alt="">
+  </div>
+
+  <div class="form">
+    <div class="mx-auto card w-full max-w-sm shrink-0 rounded-2xl bg-white">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold">Mobile Number</label>
+          <input id="input-number" maxlength="11" minlength="11" type="number" value="01876790080" class="input rounded-full bg-base-200 border-none w-full" placeholder="Enter your number" />
+          <label class="label text-neutral font-bold">4 digit PIN</label>
+          <input id="input-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200 border-none w-full" placeholder="Enter 4 digit PIN" />
+          <button id="login-btn" class="btn btn-primary rounded-full mt-4">Login</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/login.js"></script>
+</body>
+</html>
