@@ -12,7 +12,16 @@ document.getElementById("add-money-btn").addEventListener("click", function() {
 
     if (pin === "3370") {
         setBalance(newBalance);
-        alert(`${amount} added successfully from ${bank} to ${bankAccount} on ${new Date()}`);
+
+        const history = document.getElementById("history-container");
+        const newHistory = document.createElement("div");
+        newHistory.innerHTML = `
+            <div class="transaction-card p-5 bg-base-100 rounded-3xl">
+                ${amount} added successfully from ${bank} to ${bankAccount} on ${new Date()}.
+            </div>
+        `;
+        history.append(newHistory);
+        showOnly("history");
     } else {
         alert("Invalid PIN!");
         return;
